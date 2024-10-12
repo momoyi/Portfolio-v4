@@ -315,7 +315,11 @@ function initPage() {
   );
 
   // Event Listeners
-  document.addEventListener("resize", calculateIntroHeight());
+  document.addEventListener("resize", () => {
+    gsap.set(heroMedia, {
+      y: -1 * calculateMediaPosition(),
+    });
+  });
 }
 
 document.addEventListener("DOMContentLoaded", initPage());
