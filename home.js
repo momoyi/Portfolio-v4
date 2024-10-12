@@ -319,6 +319,8 @@ function initPage() {
     gsap.set(heroMedia, {
       y: -1 * calculateMediaPosition(),
     });
+
+    calculateIntroHeight();
   });
 }
 
