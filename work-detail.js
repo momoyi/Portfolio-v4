@@ -306,7 +306,7 @@ function initPage() {
   let shots = document.querySelectorAll(".project-shot_img");
   shots.forEach((shot) => {
     gsap.from(shot, {
-      scale: 1.035,
+      scale: 1.07,
       duration: 0.3,
       ease: "power1.inOut",
       scrollTrigger: {
