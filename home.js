@@ -36,6 +36,8 @@ function initPage() {
     console.log(calculatedHeight);
   }
 
+  console.log(introBlockContainer.clientHeight / 2);
+
   calculateIntroHeight();
 
   gsap.set(introBlockContainer, {
