@@ -36,7 +36,7 @@ function initPage() {
     console.log(calculatedHeight);
   }
 
-  console.log(introBlockContainer.clientHeight / 2);
+  alert(introBlockContainer.clientHeight / 2);
 
   calculateIntroHeight();
 
