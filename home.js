@@ -33,7 +33,6 @@ function initPage() {
   function calculateIntroHeight() {
     calculatedHeight =
       (introBlockContainer.clientHeight / 2) + 24 + (introText.clientHeight / 2);
-    alert(calculatedHeight);
   }
 
   calculateIntroHeight();
@@ -325,4 +324,4 @@ function initPage() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", initPage());
+window.addEventListener("runsWhenReady", initPage());
