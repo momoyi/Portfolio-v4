@@ -321,4 +321,4 @@ function initPage() {
   document.addEventListener("resize", calculateIntroHeight());
 }
 
-document.addEventListener("DOMContentLoaded", initPage());
+window.addEventListener("runsWhenReady", initPage());
