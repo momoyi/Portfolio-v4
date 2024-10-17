@@ -30,13 +30,9 @@ function initPage() {
   let footer = document.querySelector(".footer");
   let main = document.querySelector(".page-main");
 
-  function calculateIntroHeight() {
-    calculatedHeight =
-      (introBlockContainer.clientHeight / 2) + 24 + (introText.clientHeight / 2);
-    console.log(calculatedHeight);
-  }
+  
 
-  alert(introBlockContainer.clientHeight / 2);
+  console.log(introBlockContainer.clientHeight / 2);
 
   calculateIntroHeight();
 
