@@ -37,7 +37,7 @@ function initPage() {
 
   function calculateIntroHeight() {
     calculatedHeight =
-      introBlockContainer.offsetHeight / 2 + 24 + introText.offsetHeight / 2;
+      (introBlockContainer.clientHeight / 2) + 24 + (introText.clientHeight / 2);
   }
 
   calculateIntroHeight();
