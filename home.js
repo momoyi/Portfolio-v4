@@ -31,8 +31,10 @@ function initPage() {
   let main = document.querySelector(".page-main");
 
   function calculateIntroHeight() {
-    calculatedHeight =
+    let height =
       introBlockContainer.offsetHeight / 2 + 24 + introText.offsetHeight / 2;
+    console.log(calculatedHeight);
+    return height
   }
 
   calculateIntroHeight();
@@ -56,7 +58,7 @@ function initPage() {
     ease: "power2.out",
   });
   introTl.to(introText, {
-    y: calculatedHeight,
+    y: calculateIntroHeight(),
     duration: 0.75,
     ease: "power3.inOut",
   });
